@@ -7,36 +7,36 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Application.cs" />
-    <Compile Include="Entity.cs" />
-    <Compile Include="IComponent.cs" />
-    <Compile Include="ITypedObject.cs" />
-    <Compile Include="Logging.cs" />
-    <Compile Include="MeshHelper.cs" />
-    <Compile Include="ScriptedSystemInterface.cs" />
-    <Compile Include="TypedObjectManager.cs" />
-    <Compile Include="components\Camera.cs" />
-    <Compile Include="components\Light.cs" />
-    <Compile Include="components\MeshRenderer.cs" />
-    <Compile Include="components\Transform.cs" />
-    <Compile Include="resources\Material.cs" />
-    <Compile Include="resources\Mesh.cs" />
-    <Compile Include="resources\Shader.cs" />
-    <Compile Include="resources\ShaderResource.cs" />
-    <Compile Include="resources\StructuredBuffer.cs" />
-    <Compile Include="resources\Texture2D.cs" />
-    <Compile Include="resources\Texture2DArray.cs" />
-    <Compile Include="resources\TextureSampler.cs" />
-    <Compile Include="types\Matrix3x3.cs" />
-    <Compile Include="types\Matrix4x4.cs" />
-    <Compile Include="types\Quaternion.cs" />
-    <Compile Include="types\Vector2.cs" />
-    <Compile Include="types\Vector3.cs" />
-    <Compile Include="types\Vector4.cs" />
+    <Compile Include="src/Application.cs" />
+    <Compile Include="src/Entity.cs" />
+    <Compile Include="src/IComponent.cs" />
+    <Compile Include="src/ITypedObject.cs" />
+    <Compile Include="src/Logging.cs" />
+    <Compile Include="src/MeshHelper.cs" />
+    <Compile Include="src/ScriptedSystemInterface.cs" />
+    <Compile Include="src/TypedObjectManager.cs" />
+    <Compile Include="src/components/Camera.cs" />
+    <Compile Include="src/components/Light.cs" />
+    <Compile Include="src/components/MeshRenderer.cs" />
+    <Compile Include="src/components/Transform.cs" />
+    <Compile Include="src/resources/Material.cs" />
+    <Compile Include="src/resources/Mesh.cs" />
+    <Compile Include="src/resources/Shader.cs" />
+    <Compile Include="src/resources/ShaderResource.cs" />
+    <Compile Include="src/resources/StructuredBuffer.cs" />
+    <Compile Include="src/resources/Texture2D.cs" />
+    <Compile Include="src/resources/Texture2DArray.cs" />
+    <Compile Include="src/resources/TextureSampler.cs" />
+    <Compile Include="src/types/Matrix3x3.cs" />
+    <Compile Include="src/types/Matrix4x4.cs" />
+    <Compile Include="src/types/Quaternion.cs" />
+    <Compile Include="src/types/Vector2.cs" />
+    <Compile Include="src/types/Vector3.cs" />
+    <Compile Include="src/types/Vector4.cs" />
   </ItemGroup>
 
   <Target Name="Build">
       <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
-      <Exec Command="C:\Mono\bin\csc /out:$(OutputPath)$(AssemblyName).dll /target:library @(Compile, ' ')" />
+      <Exec Command="C:/Mono/bin/csc /out:$(OutputPath)$(AssemblyName).dll /target:library @(Compile, ' ')" />
   </Target>
 </Project>
