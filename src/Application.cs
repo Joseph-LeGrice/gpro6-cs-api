@@ -1,14 +1,16 @@
-using System.IO;
-using System.Reflection;
+using System.Runtime.CompilerServices;
 
-public static class Application
+public class Application : ITypedObject
 {
-    public static string ResourcePath
-    {
-        get 
-        {
-            string assemblyPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            return Path.Combine(assemblyPath, "Resources").Replace("/", "\\\\");
-        }
-    }
+// ## Generated Code ##
+	public static string GetTypeID()
+	{
+		return "Application";
+	}
+
+
+	[MethodImplAttribute(MethodImplOptions.InternalCall)]
+	public extern static string GetInstallLocation();
+
+// ## Generated Code ##
 }
