@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPro", "GPro.csproj", "{5010855D-D3C2-46E3-9461-28B75C6D7AFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-api", "cs-api.csproj", "{5010855D-D3C2-46E3-9461-28B75C6D7AFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
-  ToolsVersion="4.0"
+  ToolsVersion="4.5"
   DefaultTargets="Build"
   TreatAsLocalProperty="Platform;Configuration">
 
   <PropertyGroup>
-    <AssemblyName>GPro</AssemblyName>
+    <AssemblyName>cs-api</AssemblyName>
     <Configuration>Debug</Configuration>
     <Platform>x64</Platform>
     <OutputType>Library</OutputType>
