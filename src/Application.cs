@@ -13,4 +13,10 @@ public class Application : ITypedObject
 	public extern static string GetInstallLocation();
 
 // ## Generated Code ##
+
+	public static string ResourcePath {
+		get {
+			return System.IO.Path.Combine(GetInstallLocation(), "Resources");
+		}
+	}
 }
